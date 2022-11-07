@@ -27,7 +27,9 @@ label {
     display: none;
   }
   .sss{
-    background-color: #c9ced6;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
     border-radius: 14px;
     height: 500px;
     width: 800px;
@@ -38,3 +40,21 @@ label {
     padding: 0 16px;
     padding-top: 8px;
   } 
+  .ss1{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border-radius: 14px;
+    height: 500px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+    margin-bottom: 100px ;
+    padding: 0 16px;
+    padding-top: 8px;
+  } 
+  body{
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+  }
