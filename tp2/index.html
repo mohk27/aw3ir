@@ -1,33 +1,38 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <title></title>
+</head>
+<body>
+<div class="sss">
+    <form action="action.html" method="get" id="">
+        <p> <label for="name">Nom:</label>
+            <input type="text" name="name" id="name" required>
+            <span class="icon-ok">✔</span></p>
         
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+        <p></p>
+        <label for="prenom">Prénom:</label>
+        <input type="text" name="prenom" id="prenom"  required>
+        <span class="icon-ok">✔</span></p>
+        <p>
+        <label for="date-nai">Date de naissance:</label>
+
+            <input type="date" id="date" name="date"
+            value="" min="1935-01-01" max="2022-12-31" required>
+            <span class="icon-ok">✔</span></p>
+            <P>
+        <label for="Adresse">Adresse:</label>
+        <input type="text" name="adresse" id="adresse" value="" required>
+        <span class="icon-ok">✔</span></p>
+        <p>
+        <label for="email">E-Mail:</label>
+        <input type="text" name="email" id="email" required>
+        <span class="icon-ok">✔</span></p>
+        <input class="btn-primary" type="submit" value="Envoyer">
+    </form>
+</div>
+
+</body>
 </html>
