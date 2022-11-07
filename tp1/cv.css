@@ -1,0 +1,33 @@
+table,
+td {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+address {
+    margin-right: 800px;
+   
+}
+h2 {
+    color: rgb(0, 0, 0);
+    font-size:18px;
+    margin-right: 300px;
+}
+img {
+    border-width: 20px;
+
+    border-style: solid;
+
+}
+.vertical-line{
+    border-left: 20px solid rgb(30, 144, 255);
+    display: inline-block;
+    position: absolute;
+    height: 800px;
+    margin: 1000 10px;
+    right: 300px;
+  }
