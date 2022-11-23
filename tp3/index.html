@@ -1,33 +1,74 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP3</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+    <!-- librairie Javascript de boostrap pour pouvoir utiliser les composants interactifs (modal https://getbootstrap.com/docs/5.1/components/modal/ , collapse...) -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/form-validation.js"></script>
+    <title>KISSOUM</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Content here -->
+        <h1><b>TP AW</b></h1>
+        <br>
+        <h3>bootstrap5</h3>
+        <form class="row g-3" name="form" id="form">
+                <div class="col-12">
+                    <label for="nom" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="nom" placeholder="mohammed">
+                </div>
+                <div class="col-12">
+                    <label for="prenom" class="form-label">Prenom</label>
+                    <input type="text" class="form-control" id="prenom" placeholder="abbas">
+                </div>
+                <div class="col-12">
+                    <label for="date" class="form-label">Date de naissance</label>
+                    <input type="date" class="form-control" id="date" placeholder="12/11/2022">
+                </div>
+                <div class="col-12">
+                    <label for="adresse" class="form-label">Adresse</label>
+                    <input type="text" class="form-control" id="adresse" placeholder="1234 rue st michel ">
+                </div>
+                <div class="col-md-6">
+                <label for="mail" class="form-label">Email</label>
+                <input type="mail" class="form-control" id="mail">
+                </div>
+                
+                
+            
+                <div class="col-12">
+                    <input type="submit" class="btn btn-light" value="Valider" id="submit">
+                </div>
+          </form>
+      
+    </div>   
+      <div class="modal" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 id="modal-title" class="modal-title">Informations saisies</h5>
+    
+            </div>
+            <div id="modal-body" class="modal-body">
+              <p id="modal-error-msg"></p>
+              <p id="modal-core-msg"></p>
+              <div id="error"></div>
+              <br />
+              <div id="resultat"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="btn-close" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+   
+</body>
 </html>
