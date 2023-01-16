@@ -3,7 +3,7 @@
      <img src="https://github.com/bilelz/tpaw/blob/master/galilee.png?raw=true" alt="Logo Master" width=100/>
   </a>  
   <br/>
-  Master 3IR²  
+  Master 3IR² | <a href="https://master3ir2020.slack.com/messages/aw">master3ir2020.slack.com</a>
 
 <h3 align="center">TP5 : Application Metéo ☀️
 </h3>
@@ -21,7 +21,7 @@ TP du jour
 - [0. Prérequis (⚠ important)](#0-prérequis--important)
 - [1. OpenWeatherMap - générer votre API Key](#1-openweathermap---générer-votre-api-key)
 - [2. Installer NodeJS & un serveur web](#2-installer-nodejs--un-serveur-web)
-- [2.1 Plateforme de dév](#21-plateforme-de-dév)
+- [2.1 Plateforme de dév](#2.1-plateforme-de-dév)
 - [Developpement d'une application web pour connaitre la méteo des villes demandées de l'utilisateur.](#developpement-dune-application-web-pour-connaitre-la-méteo-des-villes-demandées-de-lutilisateur)
 - [3. Initialisation de l'application VUEjs](#3-initialisation-de-lapplication-vuejs)
 - [4. (index.html) Créer un formulaire pour saisir le nom d'une ville](#4-indexhtml-créer-un-formulaire-pour-saisir-le-nom-dune-ville)
@@ -99,7 +99,7 @@ Browser-sync ouvrira automatiquement la page index.html dans votre nagivateur.
 
 
 * Dans votre répertoire, télécharger bootstrap & vuejs dans les répertoires ```libs``` et ```css``` : 
-    * boostrap : https://getbootstrap.com/docs/5.1/getting-started/download/
+    * boostrap : https://getbootstrap.com/docs/4.0/getting-started/download/
     * vuejs : https://cdn.jsdelivr.net/npm/vue/dist/vue.js (enregistrer le fichier ```vue.js```,  Ctrl+S)
         * cette version permet le debuggage via l’extension Chrome https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd
 
@@ -111,15 +111,16 @@ tp5/
 ├── index.html
 ├── css/
 │   ├── bootstrap.css
+│   ├── bootstrap.min.css
 └── js/
     └── libs/
-        ├── bootstrap.bundle.js
+        ├── bootstrap.js
+        └── bootstrap.min.js
         └── vue.js
     └── main.js // fichier JS où sera le code de votre TP
 ```
 
-* index.html à utiliser  : https://github.com/bilelz/aw3ir/blob/master/tp5/index.html
-  * Y ajouter les imports de scripts JS et CSS nécessaires
+* index.html à utiliser (avec les imports de scripts et CSS nécessaires) : https://github.com/bilelz/aw3ir/blob/master/tp5/index.html
 
 
 ##  Developpement d'une application web pour connaitre la méteo des villes demandées de l'utilisateur.
@@ -398,7 +399,7 @@ meteo : function (_city){
 ## 11. (index.html) Affichage de la méteo
 
 * Les données météo étant chargées dans la variable ```cityWeather```, on va la mettre en forme avec une ```card``` Boostrap
-    * https://getbootstrap.com/docs/5.1/components/card/#kitchen-sink
+    * https://getbootstrap.com/docs/4.0/components/card/#kitchen-sink
 
 <p align="center">
 <kbd><img src="img/card.png"   style="box-shadow: 0 0 1em grey" border='1'></kbd><br/>
@@ -472,6 +473,7 @@ tp5/
 ├── index.html
 ├── css/
 │   ├── bootstrap.css
+│   ├── bootstrap.min.css
 │   ├── weather-icons.css ⬅️
 │   ├── weather-icons.min.css  ⬅️
 ├── font/ ⬅️
@@ -482,7 +484,8 @@ tp5/
 │   ├── weathericons-regular-webfont.woff2 ⬅️
 └── js/
     └── libs/
-        ├── bootstrap.bundle.js
+        ├── bootstrap.js
+        └── bootstrap.min.js
         └── vue.js
     └── main.js
 ```
